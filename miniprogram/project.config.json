@@ -1,0 +1,9 @@
+{
+  "description": "荒岛钓鱼求生小游戏原型",
+  "compileType": "miniprogram",
+  "libVersion": "3.9.1",
+  "appid": "touristappid",
+  "projectname": "island-fishing-survival",
+  "setting": {"urlCheck": false, "es6": true, "enhance": true, "postcss": true, "minified": true, "compileHotReLoad": true, "useCompilerPlugins": false},
+  "condition": {}
+}

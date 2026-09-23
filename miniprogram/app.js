@@ -1,0 +1,1 @@
+App({globalData:{title:"荒岛钓鱼求生"}});
