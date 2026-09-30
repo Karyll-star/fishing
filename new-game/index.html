@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>潮汐归途 · 荒岛钓鱼</title>
+	<link rel="preload" as="image" href="ui/keyart-720.jpg" imagesrcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 2560w" imagesizes="100vw" />
+	<link rel="stylesheet" href="/src/ui/ui.css" />
+	<style>
+		html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
+		#app, #app canvas { display: block; }
+		#fps { position: fixed; top: 10px; left: 12px; z-index: 50; font: 500 12px/1.2 'JetBrains Mono', ui-monospace, monospace;
+			color: #e8f6ff; background: rgba(8, 14, 22, 0.55); padding: 5px 9px; border-radius: 6px; pointer-events: none;
+			backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); letter-spacing: 0.02em; }
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+	<div id="fps">-- fps</div>
+	<div id="loader" role="status" aria-live="polite" aria-label="正在加载潮汐归途">
+		<img class="loader-art" src="ui/keyart-720.jpg" srcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 2560w" sizes="100vw" alt="" decoding="async" fetchpriority="high" onload="this.classList.add('is-in')" />
+		<div class="loader-scrim"></div>
+		<div class="loader-inner">
+			<div class="loader-brand">
+				<p class="loader-kicker">海难之后，每一竿都更接近家</p>
+				<h1 class="loader-title">潮汐归途</h1>
+				<p class="loader-tagline">从漂木湾醒来，钓鱼换物资，挑战深海首领。穿过一座座岛屿，修好回家的船。</p>
+			</div>
+			<div class="loader-panel">
+				<div class="loader-row">
+					<span class="loader-status">正在准备旅程…</span>
+					<span class="loader-meta"><span class="loader-pct">0%</span><span class="loader-time">0:00</span></span>
+				</div>
+				<div class="loader-bar"><div class="loader-fill"></div><div class="loader-glint"></div></div>
+				<div class="loader-note">首次进入需要准备海面和光影，可能花费 1～2 分钟。再次游玩通常会更快。</div>
+				<div class="loader-tips">
+					<span class="loader-tip-label">小贴士</span>
+					<div class="loader-tip-list">
+						<p class="loader-tip">按 <kbd>R</kbd> 取出鱼竿。按住鼠标左键蓄力，松开抛竿，蓄力越久抛得越远。</p>
+						<p class="loader-tip">留意浮漂：轻微下沉只是鱼在试饵。完全沉入水中时，立即点击左键提竿。</p>
+						<p class="loader-tip">与鱼搏斗时按住收线，让拉力保持在绿色区域。鱼冲刺时松手，避免断线。</p>
+						<p class="loader-tip">浅滩、珊瑚礁和深海住着不同的鱼；清晨、黄昏和深夜，也有不一样的收获。</p>
+						<p class="loader-tip">码头鱼摊的阿岚收购渔获。鱼越大，通常能换到越多贝币。</p>
+						<p class="loader-tip">船屋旁的罗叔出售更强的鱼线、渔轮、更大的鱼舱、燃油和探鱼器。</p>
+						<p class="loader-tip">在船旁按 <kbd>E</kbd> 登船，在方向盘旁按 <kbd>E</kbd> 驾驶，再按一次就能回到甲板。</p>
+						<p class="loader-tip">按 <kbd>I</kbd> 查看鱼箱和图鉴。向罗叔购买甲板灯，就能更方便地夜钓。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="/src/entry.js"></script>
+</body>
+</html>

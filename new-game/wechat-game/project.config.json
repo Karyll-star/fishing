@@ -1,0 +1,12 @@
+{
+  "description": "潮汐归途：共享 Tidewater 玩法逻辑的 Canvas 轻量小游戏，商业化默认演示",
+  "projectname": "潮汐归途",
+  "appid": "touristappid",
+  "compileType": "game",
+  "miniprogramRoot": "./",
+  "setting": {
+    "es6": true,
+    "minified": true,
+    "urlCheck": true
+  }
+}

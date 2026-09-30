@@ -1,0 +1,19 @@
+{
+  "name": "tidewater",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5189",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node scripts/serve.mjs",
+    "build:wechat": "node scripts/build-wechat.mjs",
+    "test": "node test/game-logic.mjs && node test/engine-smoke.mjs"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0",
+    "webgpu": "^0.6.1"
+  },
+  "license": "MIT",
+  "private": true,
+  "type": "module"
+}
